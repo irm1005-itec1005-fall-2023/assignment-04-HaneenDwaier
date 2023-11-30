@@ -154,3 +154,17 @@ document.getElementById('form-1').addEventListener('submit', function(event) {
     let reminderDate = document.getElementById('reminder-date').value;
     addTask(taskText, reminderDate);
 });
+function addTask(taskText) {
+    let li = document.createElement('li');
+    let markDoneButton = document.createElement('button');
+    markDoneButton.textContent = 'Mark as Done';
+    markDoneButton.onclick = function() {
+        li.style.textDecoration = 'line-through';
+        // Optionally remove or disable the button after marking as done
+        markDoneButton.disabled = true;
+    };
+
+    li.appendChild(document.createTextNode(taskText));
+    li.appendChild(markDoneButton);
+    document.getElementById('form-results-1').appendChild(li);
+}

@@ -147,3 +147,11 @@ ul li {
   width: 100%; /* Ensures the div spans the full width */
   margin-top: 20px; /* Adjust as needed for spacing */
 }
+.mark-done-button {
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
