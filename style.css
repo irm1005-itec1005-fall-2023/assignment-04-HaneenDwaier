@@ -102,7 +102,7 @@ ul li {
 
 .my-button {
   margin: 0.5rem;
-  background-color: rgb(227, 144, 183)172, 166, 166;
+  background-color: rgb(223, 216, 219)172, 166, 166;
   border:none;
   border-radius: 2rem;
 }
@@ -149,7 +149,7 @@ ul li {
 }
 .mark-done-button {
   margin-left: 10px;
-  background-color: green;
+  background-color: rgb(128, 0, 94);
   color: white;
   border: none;
   border-radius: 5px;
