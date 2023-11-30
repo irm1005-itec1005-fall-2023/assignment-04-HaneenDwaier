@@ -55,7 +55,7 @@ function renderData() {
         tempParagraph.textContent = todolistArray[i];
 
         tempButton.textContent = "remove";
-        tempButton.className = "my-button"; //Assign the button name
+        tempButton.className = "+"; 
 
 
         tempButton.dataset.super =i;
@@ -100,3 +100,13 @@ function saveStrikethroughStatus(i, status) {
 function getStrikethroughStatus(i) {
     return localStorage.getItem(`strikethrough_${i}`) === 'true';
 }
+document.getElementById('suggestion-btn').addEventListener('click', function() {
+    let suggestions = ['Cook dinner', 'Exercise', 'Pay hydro bill']; // Example suggestions
+    let suggestionList = document.getElementById('suggestion-results');
+    suggestionList.innerHTML = ''; // Clear existing suggestions
+    suggestions.forEach(suggestion => {
+        let li = document.createElement('li');
+        li.textContent = suggestion;
+        suggestionList.appendChild(li);
+    });
+});
