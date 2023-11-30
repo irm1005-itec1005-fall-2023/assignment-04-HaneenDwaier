@@ -132,3 +132,25 @@ document.getElementById('suggestion-btn').addEventListener('click', function() {
         suggestionList.style.display = 'block'; // Show with fade-in effect
     }, 500); // 500 milliseconds delay
 });
+function addTask(taskText, reminderDate) {
+    let li = document.createElement('li');
+    li.textContent = taskText;
+
+    if (reminderDate) {
+        let date = new Date(reminderDate);
+        let now = new Date();
+        if (date > now) {
+            setTimeout(() => {
+                alert('Reminder: ' + taskText);
+            }, date - now);
+        }
+    }
+
+    document.getElementById('form-results-1').appendChild(li);
+}
+document.getElementById('form-1').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let taskText = document.getElementById('list-input').value;
+    let reminderDate = document.getElementById('reminder-date').value;
+    addTask(taskText, reminderDate);
+});
