@@ -93,7 +93,7 @@ ul {
 }
 
 ul li {
-  background-color: #a20869;
+  background-color: #eebcdc;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,7 +102,7 @@ ul li {
 
 .my-button {
   margin: 0.5rem;
-  background-color: rgb(182, 72, 124)172, 166, 166;
+  background-color: rgb(227, 144, 183)172, 166, 166;
   border:none;
   border-radius: 2rem;
 }
