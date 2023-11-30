@@ -118,7 +118,7 @@ function displayDate() {
 
 window.onload = displayDate;
 document.getElementById('suggestion-btn').addEventListener('click', function() {
-    let suggestions = ['Cook dinner', 'Exercise', 'Pay hydro bill']; // Example suggestions
+    let suggestions = ['Cook dinner🍕', 'Exercise', '*Pay hydro bill']; // Example suggestions
     let suggestionList = document.getElementById('suggestion-results');
     suggestionList.innerHTML = ''; // Clear existing suggestions
     suggestionList.style.display = 'none'; // Hide before populating
