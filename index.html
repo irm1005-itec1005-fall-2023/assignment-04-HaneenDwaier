@@ -41,7 +41,29 @@
   -->
 
   <main>
+    
+   <section class="form-example">
+    <h2 id="my-day">🌞 My Day</h2>
+      <label for="list-input"></label>
+      <form id="form-1">
+       <input type="text" id="list-input" placeholder="Tasks" required>
+       <button class="btn-primary" id="btn-1" type="submit">+</button>
+       <button class="btn-primary" id="suggestion-btn"> Suggestions</button>
+       <ul class="suggestion-results" id="suggestion-results"></ul>
+
+      </form>
+    </section>
+
+    <div class="container"> 
+      <ul class="form-results" id="form-results-1"></ul>
+   </div>
+   
+
     <div id="app"></div>
+    <div id="current-date"></div>
+    <input type="date" id="reminder-date">
+
+
   </main>
 
   <!-- Add JavaScript File -->

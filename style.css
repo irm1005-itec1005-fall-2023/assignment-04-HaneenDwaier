@@ -29,20 +29,96 @@
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("aaron-burden-FHWgqOniOSY-unsplash.jpg");
 }
 
 main {
-  min-height: 100vh;
+  width:100%;
+  max-width:540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
 
+h2 {
+  text-align: center;
+}
+
+form {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+input {
+  flex:1;
+  border:none;
+  background:rgb(77, 6, 107), 206, 218;
+  padding: 10px;
+  font-weight: 14px;
+  border-radius: 2rem;
+}
+
+.btn-primary {
+  border:none;
+  padding: 10px 20px;
+  font-weight: 14px;
+  border-radius: 2rem;
+} 
+
+.container {
+  display: flex;
+  align-items: center; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  background-color: #e63946;
+  list-style: none;
+  font-size: 17px;
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+
+ul li {
+  background-color: #eebcdc;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
+.my-button {
+  margin: 0.5rem;
+  background-color: rgb(223, 216, 219)172, 166, 166;
+  border:none;
+  border-radius: 2rem;
+}
 
-/****** Screen reader text utility clsas *******/
+.done-button {
+  margin: 0.5rem;
+  background-color: rgb(143, 143, 143)172, 166, 166;
+  border:none;
+  border-radius: 2rem;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+/**** Screen reader text utility clsas *******/
 .sr-only {
   position: absolute;
   width: 1px;
@@ -53,4 +129,29 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+#suggestion-results {
+  display: none;
+  /* other styling */
+  animation: fadeIn 1s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+#current-date {
+  text-align: center; /* Centers text horizontally */
+  width: 100%; /* Ensures the div spans the full width */
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
+.mark-done-button {
+  margin-left: 10px;
+  background-color: rgb(128, 0, 94);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
