@@ -142,3 +142,8 @@ ul li {
       opacity: 1;
   }
 }
+#current-date {
+  text-align: center; /* Centers text horizontally */
+  width: 100%; /* Ensures the div spans the full width */
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
