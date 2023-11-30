@@ -117,3 +117,18 @@ function displayDate() {
 }
 
 window.onload = displayDate;
+document.getElementById('suggestion-btn').addEventListener('click', function() {
+    let suggestions = ['Cook dinner', 'Exercise', 'Pay hydro bill']; // Example suggestions
+    let suggestionList = document.getElementById('suggestion-results');
+    suggestionList.innerHTML = ''; // Clear existing suggestions
+    suggestionList.style.display = 'none'; // Hide before populating
+
+    setTimeout(function() { // Delay the display
+        suggestions.forEach(suggestion => {
+            let li = document.createElement('li');
+            li.textContent = suggestion;
+            suggestionList.appendChild(li);
+        });
+        suggestionList.style.display = 'block'; // Show with fade-in effect
+    }, 500); // 500 milliseconds delay
+});

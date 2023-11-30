@@ -130,3 +130,15 @@ ul li {
   white-space: nowrap;
   border-width: 0;
 }
+#suggestion-results {
+  display: none;
+  /* other styling */
+  animation: fadeIn 1s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
